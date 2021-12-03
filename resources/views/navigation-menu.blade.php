@@ -18,6 +18,11 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('citizen') }}" :active="request()->routeIs('citizen')">
+                        {{ __('Data Citizen') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('failamir') }}" :active="request()->routeIs('failamir')">
                         {{ __('Data Warga') }}
                     </x-jet-nav-link>
                 </div>

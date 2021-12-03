@@ -15,11 +15,30 @@
                             @error('name') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <div class="mb-4">
+                            <label for="formName" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="formName" wire:model="email">
+                            @error('name') <span class="text-red-500">{{ $message }}</span>@enderror
+                        </div>
+                        <div class="mb-4">
                             <label for="formName" class="block text-gray-700 text-sm font-bold mb-2">NIK:</label>
                             <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="formName" wire:model="NIK">
                             @error('name') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
+                        <div class="mb-4">
+                            <label for="formName" class="block text-gray-700 text-sm font-bold mb-2">Nomor HP:</label>
+                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="formName" wire:model="nomor_hp">
+                            @error('name') <span class="text-red-500">{{ $message }}</span>@enderror
+                        </div>
                         
+                        <div class="mb-4">
+                            <label for="formStatus" class="block text-gray-700 text-sm font-bold mb-2">Status</label>
+                            <select class="form-control" wire:model="status" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                <option value="">Pilih</option>
+                                <option value="1">Menikah</option>
+                                <option value="0">Belum Menikah</option>
+                            </select>
+                            @error('status') <span class="text-red-500">{{ $message }}</span>@enderror
+                        </div>
                     </div>
                 </div>
     

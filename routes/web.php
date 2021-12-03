@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Citizens;
-
+use App\Http\Livewire\Wargas;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +23,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('citizen', Citizens::class)->name('citizen');
+Route::get('warga', Wargas::class)->name('failamir');
